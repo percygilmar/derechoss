@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrantes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('fondo.jpg');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        .integrantes-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .integrante {
+            position: relative;
+            margin: 0 20px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .integrante img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            transition: opacity 0.3s;
+        }
+
+        .integrante:hover {
+            transform: scale(1.1);
+        }
+
+        .integrante:hover img {
+            opacity: 0;
+        }
+
+        .integrante::after {
+            content: '';
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            z-index: -1;
+            transition: opacity 0.3s;
+            opacity: 0;
+        }
+
+        #integrante1:hover::after {
+            background-image: url('alex.jpg');
+            opacity: 1;
+        }
+
+        #integrante2:hover::after {
+            background-image: url('nad.jpg');
+            opacity: 1;
+        }
+
+        #integrante3:hover::after {
+            background-image: url('kar.jpg');
+            opacity: 1;
+        }
+
+        .integrante-name {
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Estilos para el menú de navegación */
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+            /* Centra el texto del menú */
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-flex;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            border-radius: 5px;
+            background-color: #c5ed62;
+            /* Color de fondo del enlace */
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #d5e88a;
+            /* Color de fondo al pasar el ratón */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Integrantes</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">INICIO</a></li>
+            <li><a href="bibliografia.html">BIBLIOGRAFIA</a></li>
+            <li><a href="integrantes.html">INTEGRANTES</a></li>
+            <li><a
+                    href="https://es.educaplay.com/recursos-educativos/18482709-quiz_de_derechos_de_las_victimas_de_violacion.html">JUEGO</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="integrantes-container">
+        <div class="integrante" id="integrante1">
+            <a href="https://www.instagram.com/armando.q.i/" target="_blank">
+                <img src="armando.jpeg" alt="Integrante 1">
+            </a>
+            <div class="integrante-name">ALEX QUISPE INGALI</div>
+        </div>
+        <div class="integrante" id="integrante2">
+            <a href="https://www.instagram.com/nnnadiiiia/?utm_source=qr" target="_blank">
+                <img src="nadia.jpg" alt="Integrante 2">
+            </a>
+            <div class="integrante-name">NADIA ROJAS QUISBERT</div>
+        </div>
+        <div class="integrante" id="integrante3">
+            <a href="https://www.instagram.com/karlisegurondo/" target="_blank">
+                <img src="karla.jpg" alt="Integrante 3">
+            </a>
+            <div class="integrante-name">KARLA SEGURONDO PABON</div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-flex;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: #c5ed62;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #d5e88a;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.theme {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.middle-section {
+    margin-top: 50px; /* Ajusta este valor según sea necesario */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.middle-section h2 {
+    margin-bottom: 20px;
+}
+
+/* Estilos para las imágenes */
+/* Estilos para las imágenes */
+.photo-gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Hace que la imagen tenga forma de círculo */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se extienda más allá del círculo */
+}
+
+/* Ajusta el tamaño del contenedor para que las imágenes estén dentro de un círculo */
+.photo-gallery {
+    width: 300px; /* Ajusta según sea necesario */
+    height: 300px; /* Ajusta según sea necesario */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se extienda más allá del círculo */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
